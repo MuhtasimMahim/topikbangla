@@ -1,0 +1,21 @@
+{
+  "name": "TOPIKBangla",
+  "short_name": "TOPIKBangla",
+  "description": "Learn Korean with AI-powered lessons tailored for Bengali speakers",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#00FFFF",
+  "icons": [
+    {
+      "src": "/icon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

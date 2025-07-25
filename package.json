@@ -1,0 +1,40 @@
+{
+  "dependencies": {
+    "@ai-sdk/openai": "latest",
+    "@emotion/is-prop-valid": "latest",
+    "@radix-ui/react-scroll-area": "latest",
+    "@remix-run/react": "latest",
+    "@sveltejs/kit": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@vercel/analytics": "latest",
+    "@vercel/speed-insights": "latest",
+    "ai": "latest",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "latest",
+    "lucide-react": "^0.454.0",
+    "next": "15.2.4",
+    "node-fetch": "latest",
+    "pdfjs-dist": "^3.4.120",
+    "pdfkit": "latest",
+    "react": "^19",
+    "react-dom": "^19",
+    "react-pdf": "latest",
+    "react-select": "latest",
+    "react-swipeable": "latest",
+    "svelte": "latest",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7",
+    "vue": "latest",
+    "vue-router": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "postcss": "^8.5",
+    "typescript": "^5"
+  }
+}
