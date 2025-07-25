@@ -1,17 +1,15 @@
 "use client"
 
 import type React from "react"
-
 import { useState, useEffect } from "react"
 import { Document, Page, pdfjs } from "react-pdf"
 import { useToast } from "@/components/ui/use-toast"
 import { Button } from "@/components/ui/button"
 import { ChevronLeft, ChevronRight, Download, ZoomIn, ZoomOut } from "lucide-react"
 import { fetchPDFThroughProxy } from "@/api/pdfProxy"
-import "react-pdf/dist/esm/Page/AnnotationLayer.css"
-import "react-pdf/dist/esm/Page/TextLayer.css"
 
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`
+// Set up PDF.js worker
+pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`
 
 interface PDFViewerProps {
   url: string
@@ -131,9 +129,7 @@ const PDFViewer: React.FC<PDFViewerProps> = ({ url }) => {
           <Page
             pageNumber={pageNumber}
             scale={scale}
-            renderTextLayer={true}
-            renderAnnotationLayer={true}
-            width={Math.min(window.innerWidth * 0.9, 800)}
+            width={Math.min(typeof window !== "undefined" ? window.innerWidth * 0.9 : 800, 800)}
           />
         </Document>
       </div>
